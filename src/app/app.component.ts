@@ -8,5 +8,5 @@ import { UnitSelectorComponent } from './unit-selector.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    unit_sets = [1,2];
+  unit_sets = [1,2,3];
 }
