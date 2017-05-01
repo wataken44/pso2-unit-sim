@@ -55,7 +55,7 @@ new UnitParameter({id: "A12-14",unit_type: "arm",rareity: 12,name: "クリファ
 export const LEG_UNITS: UnitParameter[] = [
   /* %%leg_units%% */
 new UnitParameter({id: "L0",unit_type: "leg",rareity: 0,name: "レッグなし",craft: "",hp: 0,pp: 0,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 0,rdef: 0,tdef: 0,sreg: 0,rreg: 0,treg: 0,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
-new UnitParameter({id: "L11-1",unit_type: "leg",rareity: 11,name: "ブリサマーニ",craft: "",hp: 40,pp: 5,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 211,rdef: 220,tdef: 211,sreg: 3,rreg: 4,treg: 0,efreg: 3,eireg: 0,etreg: 0,ewreg: 3,elreg: 0,edreg: 3}),
+new UnitParameter({id: "L11-1",unit_type: "leg",rareity: 11,name: "ブリサマーニ",craft: "",hp: 40,pp: 5,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 211,rdef: 220,tdef: 211,sreg: 3,rreg: 4,treg: 0,efreg: 3,eireg: 0,etreg: 0,ewreg: 3,elreg: 3,edreg: 0}),
 new UnitParameter({id: "L11-2",unit_type: "leg",rareity: 11,name: "サイキショク",craft: "",hp: 50,pp: 0,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 229,rdef: 202,tdef: 238,sreg: 4,rreg: 4,treg: 0,efreg: 0,eireg: 8,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
 new UnitParameter({id: "L11-2-1",unit_type: "leg",rareity: 11,name: "サイキショク",craft: "打撃防御【HP】Lv.10",hp: 100,pp: 0,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 240,rdef: 220,tdef: 220,sreg: 4,rreg: 0,treg: 0,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
 new UnitParameter({id: "L11-2-2",unit_type: "leg",rareity: 11,name: "サイキショク",craft: "射撃防御【PP】Lv.10",hp: 0,pp: 10,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 240,rdef: 220,tdef: 220,sreg: 0,rreg: 4,treg: 0,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),

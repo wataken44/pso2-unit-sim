@@ -48,7 +48,7 @@ A12-14	arm	12	クリファドリタ					40	13	35	35	35		230	236	231	1	2	2
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
 L0	leg	0	レッグなし					0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-L11-1	leg	11	ブリサマーニ					40	5					211	220	211	3	4		3			3		3
+L11-1	leg	11	ブリサマーニ					40	5					211	220	211	3	4		3			3	3	
 L11-2	leg	11	サイキショク					50						229	202	238	4	4			8				
 L11-2-1	leg	11	サイキショク	打撃防御【HP】Lv.10				100	0					240	220	220	4								
 L11-2-2	leg	11	サイキショク	射撃防御【PP】Lv.10				0	10					240	220	220		4							
