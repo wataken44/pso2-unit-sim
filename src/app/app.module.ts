@@ -5,9 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { UnitSelectorComponent } from './unit-selector.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UnitSelectorComponent
   ],
   imports: [
     BrowserModule,

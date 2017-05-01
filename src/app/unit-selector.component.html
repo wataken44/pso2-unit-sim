@@ -1,0 +1,49 @@
+<form class="form-inline">
+  <select name="rear" class="form-control" [(ngModel)]="rear_index" (change)="updateUnitSet()">
+    <option *ngFor="let rear_unit of rear_units; let idx = index;" value={{idx}}>{{rear_unit.getDisplayName()}}</option>
+  </select>
+  <select name="arm" class="form-control" [(ngModel)]="arm_index" (change)="updateUnitSet()">
+    <option *ngFor="let arm_unit of arm_units; let idx = index;" value={{idx}}>{{arm_unit.getDisplayName()}}</option>
+  </select>
+  <select name="leg" class="form-control" [(ngModel)]="leg_index" (change)="updateUnitSet()">
+    <option *ngFor="let leg_unit of leg_units; let idx = index;" value={{idx}}>{{leg_unit.getDisplayName()}}</option>
+  </select>
+</form>
+<div>
+  <table class="table table-sm table-bordered">
+    <thead>
+      <tr>
+        <td></td>
+        <td style="min-width:12em;">名前</td>
+        <td *ngFor="let label of label_short;">{{ label }}</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>リア</td>
+        <td>{{ rear_units[rear_index].getDisplayName() }}</td>
+        <td class="text-right" *ngFor="let label of label_short; let idx = index;">{{ rear_units[rear_index].getParam(idx) }}</td>
+      </tr>
+      <tr>
+        <td>アーム</td>
+        <td>{{ arm_units[arm_index].getDisplayName() }}</td>
+        <td class="text-right" *ngFor="let label of label_short; let idx = index;">{{ arm_units[arm_index].getParam(idx) }}</td>
+      </tr>
+      <tr>
+        <td>レッグ</td>
+        <td>{{ leg_units[leg_index].getDisplayName() }}</td>
+        <td class="text-right" *ngFor="let label of label_short; let idx = index;">{{ leg_units[leg_index].getParam(idx) }}</td>
+      </tr>
+      <tr>
+        <td>セット</td>
+        <td></td>
+        <td class="text-right" *ngFor="let label of label_short; let idx = index;">{{ unit_sets[unit_set_index].getParam(idx) }}</td>
+      </tr>
+      <tr>
+        <td>合計</td>
+        <td></td>
+        <td class="text-right" *ngFor="let label of label_short; let idx = index;">{{ rear_units[rear_index].getParam(idx)+ arm_units[arm_index].getParam(idx) + leg_units[leg_index].getParam(idx) + unit_sets[unit_set_index].getParam(idx) }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

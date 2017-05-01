@@ -1,0 +1,17 @@
+import { UnitParameter, UnitSetParameter } from './unit-parameter'
+
+export const REAR_UNITS: UnitParameter[] = [
+  /* %%rear_units%% */
+];
+
+export const ARM_UNITS: UnitParameter[] = [
+  /* %%arm_units%% */
+];
+
+export const LEG_UNITS: UnitParameter[] = [
+  /* %%leg_units%% */
+];
+
+export const UNIT_SETS: UnitSetParameter[] = [
+  /* %%unit_sets%% */
+];

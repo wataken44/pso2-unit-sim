@@ -1,0 +1,25 @@
+#id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
+R0	rear	0	リアなし					0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+R11-1	rear	11	ブリサエーリ					40	5					211	220	211	3	4		3			3	3	
+R11-2	rear	11	サイキホウヨク					50						229	202	238	4	4			8				
+R11-2-1	rear	11	サイキホウヨク	打撃防御【HP】Lv.10				100	0					240	220	220	4								
+R11-2-2	rear	11	サイキホウヨク	射撃防御【PP】Lv.10				0	10					240	220	220		4							
+R11-2-3	rear	11	サイキホウヨク	法撃防御【属性】Lv.10				30	3					240	220	220			4	4	4	4	4	4	4
+R11-3	rear	11	Pドライブ					100	5					255	235	245	5	3	4	2	2	2	2	2	2
+R11-4	rear	11	インヴェルム					60	6					230	210	220	3	2	3	2		2			3
+R11-5	rear	11	オフゼルム					70	5					235	215	225	3	3	4		2		2	2	
+R11-6	rear	11	イデアルディール					100						206	202	202		3	3		2		2		2
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+A0	arm	0	アームなし					0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+																									
+																									
+L0	leg	0	レッグなし					0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+																									
+																									
+S0	set	0						0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0

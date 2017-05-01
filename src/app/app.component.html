@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid unit-set" *ngFor="let unit_set of unit_sets; let idx = index;">
+  <div class="row">
+    <div class="col">
+      {{idx}}
+      <unit-selector></unit-selector>
+    </div>
+  </div>
+</div>
