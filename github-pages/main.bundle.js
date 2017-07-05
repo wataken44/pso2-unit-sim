@@ -1,9 +1,9 @@
 webpackJsonp([1,4],{
 
-/***/ 140:
+/***/ 141:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(46)(false);
+exports = module.exports = __webpack_require__(47)(false);
 // imports
 
 
@@ -35,12 +35,12 @@ module.exports = "<form class=\"form-inline\">\n  <select name=\"rear\" class=\"
 /***/ 168:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(75);
+module.exports = __webpack_require__(76);
 
 
 /***/ }),
 
-/***/ 52:
+/***/ 53:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -217,7 +217,7 @@ var LABEL_LONG = [
 
 /***/ }),
 
-/***/ 74:
+/***/ 75:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -226,20 +226,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 74;
+webpackEmptyContext.id = 75;
 
 
 /***/ }),
 
-/***/ 75:
+/***/ 76:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(87);
 
 
 
@@ -252,7 +252,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 82:
+/***/ 83:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -272,10 +272,10 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-root',
         template: __webpack_require__(142),
-        styles: [__webpack_require__(140)]
+        styles: [__webpack_require__(141)]
     })
 ], AppComponent);
 
@@ -283,16 +283,16 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 83:
+/***/ 84:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__unit_selector_component__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__unit_selector_component__ = __webpack_require__(86);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -331,11 +331,11 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 84:
+/***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__unit_parameter__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__unit_parameter__ = __webpack_require__(53);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return REAR_UNITS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ARM_UNITS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return LEG_UNITS; });
@@ -362,7 +362,8 @@ var REAR_UNITS = [
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-11", unit_type: "rear", rareity: 12, name: "シャインレッド", craft: "", hp: 0, pp: 0, satk: 80, ratk: 80, tatk: 80, dex: 80, sdef: 241, rdef: 236, tdef: 239, sreg: 3, rreg: 3, treg: 3, efreg: 10, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-12", unit_type: "rear", rareity: 12, name: "シャインブルー", craft: "", hp: 150, pp: 5, satk: 0, ratk: 0, tatk: 0, dex: 0, sdef: 231, rdef: 228, tdef: 230, sreg: 3, rreg: 3, treg: 3, efreg: 0, eireg: 10, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-13", unit_type: "rear", rareity: 12, name: "ゼイネシスガナフ", craft: "", hp: 120, pp: 4, satk: 15, ratk: 15, tatk: 15, dex: 0, sdef: 240, rdef: 244, tdef: 249, sreg: 3, rreg: 3, treg: 2, efreg: 2, eireg: 2, etreg: 2, ewreg: 2, elreg: 2, edreg: 2 }),
-    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-14", unit_type: "rear", rareity: 12, name: "クリファドガナフ", craft: "", hp: 40, pp: 13, satk: 35, ratk: 35, tatk: 35, dex: 0, sdef: 230, rdef: 236, tdef: 231, sreg: 2, rreg: 2, treg: 1, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 })
+    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-14", unit_type: "rear", rareity: 12, name: "クリファドガナフ", craft: "", hp: 40, pp: 13, satk: 35, ratk: 35, tatk: 35, dex: 0, sdef: 230, rdef: 236, tdef: 231, sreg: 2, rreg: 2, treg: 1, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
+    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-15", unit_type: "rear", rareity: 12, name: "ウェラボード", craft: "", hp: 50, pp: 10, satk: 40, ratk: 40, tatk: 40, dex: 0, sdef: 240, rdef: 246, tdef: 237, sreg: 5, rreg: 4, treg: 4, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 })
 ];
 var ARM_UNITS = [
     /* %%arm_units%% */
@@ -429,13 +430,13 @@ var UNIT_SETS = [
 
 /***/ }),
 
-/***/ 85:
+/***/ 86:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__unit_parameter_data__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__unit_parameter__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__unit_parameter_data__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__unit_parameter__ = __webpack_require__(53);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UnitSelectorComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -470,7 +471,7 @@ var UnitSelectorComponent = (function () {
     return UnitSelectorComponent;
 }());
 UnitSelectorComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'unit-selector',
         template: __webpack_require__(143)
     })
@@ -480,7 +481,7 @@ UnitSelectorComponent = __decorate([
 
 /***/ }),
 
-/***/ 86:
+/***/ 87:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

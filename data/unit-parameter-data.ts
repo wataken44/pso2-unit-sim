@@ -21,7 +21,8 @@ new UnitParameter({id: "R12-8",unit_type: "rear",rareity: 12,name: "アストラ
 new UnitParameter({id: "R12-11",unit_type: "rear",rareity: 12,name: "シャインレッド",craft: "",hp: 0,pp: 0,satk: 80,ratk: 80,tatk: 80,dex: 80,sdef: 241,rdef: 236,tdef: 239,sreg: 3,rreg: 3,treg: 3,efreg: 10,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
 new UnitParameter({id: "R12-12",unit_type: "rear",rareity: 12,name: "シャインブルー",craft: "",hp: 150,pp: 5,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 231,rdef: 228,tdef: 230,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 10,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
 new UnitParameter({id: "R12-13",unit_type: "rear",rareity: 12,name: "ゼイネシスガナフ",craft: "",hp: 120,pp: 4,satk: 15,ratk: 15,tatk: 15,dex: 0,sdef: 240,rdef: 244,tdef: 249,sreg: 3,rreg: 3,treg: 2,efreg: 2,eireg: 2,etreg: 2,ewreg: 2,elreg: 2,edreg: 2}),
-new UnitParameter({id: "R12-14",unit_type: "rear",rareity: 12,name: "クリファドガナフ",craft: "",hp: 40,pp: 13,satk: 35,ratk: 35,tatk: 35,dex: 0,sdef: 230,rdef: 236,tdef: 231,sreg: 2,rreg: 2,treg: 1,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0})
+new UnitParameter({id: "R12-14",unit_type: "rear",rareity: 12,name: "クリファドガナフ",craft: "",hp: 40,pp: 13,satk: 35,ratk: 35,tatk: 35,dex: 0,sdef: 230,rdef: 236,tdef: 231,sreg: 2,rreg: 2,treg: 1,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
+new UnitParameter({id: "R12-15",unit_type: "rear",rareity: 12,name: "ウェラボード",craft: "",hp: 50,pp: 10,satk: 40,ratk: 40,tatk: 40,dex: 0,sdef: 240,rdef: 246,tdef: 237,sreg: 5,rreg: 4,treg: 4,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0})
 ];
 
 export const ARM_UNITS: UnitParameter[] = [
