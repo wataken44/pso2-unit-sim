@@ -21,6 +21,8 @@ R12-13	rear	12	ゼイネシスガナフ					120	4	15	15	15		240	244	249	3	3	2	2	
 R12-14	rear	12	クリファドガナフ					40	13	35	35	35		230	236	231	2	2	1						
 R12-15	rear	12	ウェラボード					50	10	40	40	40		240	246	237	5	4	4						
 R12-16	rear	12	イヴリダキブス					60	10	25	25	25		234	234	234	3	3	3	2					2
+R12-17	rear	12	カブキモノライデン							80	80	80	80	241	236	239	3	3	3			10			
+R12-18	rear	12	ヒメカブキチェリー					150	5					231	228	230	3	3	3				10		
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
 A0	arm	0	アームなし					0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
