@@ -24,6 +24,7 @@ R12-16	rear	12	イヴリダキブス					60	10	25	25	25		234	234	234	3	3	3	2				
 R12-17	rear	12	カブキモノライデン							80	80	80	80	241	236	239	3	3	3			10			
 R12-18	rear	12	ヒメカブキチェリー					150	5					231	228	230	3	3	3				10		
 R12-19	rear	12	ステラウォール					50	5	15	15	15	15	229	229	229	2	2	2						
+R12-20	rear	12	フォボスクーペ					80		40	40	40		263	263	263	5	5	5						
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
 A0	arm	0	アームなし					0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
@@ -53,6 +54,7 @@ A12-14	arm	12	クリファドリタ					40	13	35	35	35		230	236	231	1	2	2
 A12-15	arm	12	ハングボード					50	10	40	40	40		237	240	246	4	5	4						
 A12-16	arm	12	イヴリダリット					60	10	25	25	25		234	234	234	3	3	3	2					2
 A12-19	arm	12	ステラウォール					50	5	15	15	15	15	229	229	229	2	2	2						
+A12-20	arm	12	フォボスヘッジ					80		40	40	40		263	263	263	5	5	5						
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
 L0	leg	0	レッグなし					0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
@@ -79,6 +81,7 @@ L12-14	leg	12	クリファドレム					40	13	35	35	35		230	236	231	2	1	2
 L12-15	leg	12	タッグボード					50	10	40	40	40		246	237	240	4	4	5						
 L12-16	leg	12	イヴリダセルブ					60	10	25	25	25		234	234	234	3	3	3	2					2
 L12-19	leg	12	ステラウォール					50	5	15	15	15	15	229	229	229	2	2	2						
+L12-20	leg	12	フォボスニード					80		40	40	40		263	263	263	5	5	5						
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
 S11-1	set	11			ブリサエーリ	ブリサオッジ	ブリサマーニ	80	5	70	70	70	50	0	0	0	0	0	0	0	9	9	0	0	9
