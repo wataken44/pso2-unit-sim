@@ -371,7 +371,8 @@ var REAR_UNITS = [
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-20", unit_type: "rear", rareity: 12, name: "フォボスクーペ", craft: "", hp: 80, pp: 0, satk: 40, ratk: 40, tatk: 40, dex: 0, sdef: 263, rdef: 263, tdef: 263, sreg: 5, rreg: 5, treg: 5, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-21", unit_type: "rear", rareity: 12, name: "ゲッコウホロー", craft: "", hp: 0, pp: 0, satk: 80, ratk: 80, tatk: 80, dex: 80, sdef: 241, rdef: 236, tdef: 239, sreg: 3, rreg: 3, treg: 3, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 10, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-22", unit_type: "rear", rareity: 12, name: "ヤテンホロー", craft: "", hp: 150, pp: 5, satk: 0, ratk: 0, tatk: 0, dex: 0, sdef: 231, rdef: 228, tdef: 230, sreg: 3, rreg: 3, treg: 3, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 10 }),
-    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-23", unit_type: "rear", rareity: 12, name: "クラーデムイリック", craft: "", hp: 0, pp: 0, satk: 0, ratk: 0, tatk: 0, dex: 0, sdef: 0, rdef: 0, tdef: 0, sreg: 0, rreg: 0, treg: 0, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 })
+    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-23", unit_type: "rear", rareity: 12, name: "クラーデムイリック", craft: "", hp: 0, pp: 17, satk: 0, ratk: 0, tatk: 85, dex: 0, sdef: 233, rdef: 229, tdef: 286, sreg: 2, rreg: 1, treg: 4, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 5 }),
+    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "R12-26", unit_type: "rear", rareity: 12, name: "ラッピーシャイン", craft: "", hp: 777, pp: 0, satk: 0, ratk: 0, tatk: 0, dex: 0, sdef: 0, rdef: 0, tdef: 0, sreg: 0, rreg: 0, treg: 0, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 })
 ];
 var ARM_UNITS = [
     /* %%arm_units%% */
@@ -403,7 +404,7 @@ var ARM_UNITS = [
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A12-16", unit_type: "arm", rareity: 12, name: "イヴリダリット", craft: "", hp: 60, pp: 10, satk: 25, ratk: 25, tatk: 25, dex: 0, sdef: 234, rdef: 234, tdef: 234, sreg: 3, rreg: 3, treg: 3, efreg: 2, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 2 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A12-19", unit_type: "arm", rareity: 12, name: "ステラウォール", craft: "", hp: 50, pp: 5, satk: 15, ratk: 15, tatk: 15, dex: 15, sdef: 229, rdef: 229, tdef: 229, sreg: 2, rreg: 2, treg: 2, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A12-20", unit_type: "arm", rareity: 12, name: "フォボスヘッジ", craft: "", hp: 80, pp: 0, satk: 40, ratk: 40, tatk: 40, dex: 0, sdef: 263, rdef: 263, tdef: 263, sreg: 5, rreg: 5, treg: 5, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
-    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A12-24", unit_type: "arm", rareity: 12, name: "シャライラケラス", craft: "", hp: 0, pp: 0, satk: 0, ratk: 0, tatk: 0, dex: 0, sdef: 0, rdef: 0, tdef: 0, sreg: 0, rreg: 0, treg: 0, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 })
+    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A12-24", unit_type: "arm", rareity: 12, name: "シャライラケラス", craft: "", hp: 0, pp: 17, satk: 85, ratk: 0, tatk: 0, dex: 0, sdef: 286, rdef: 233, tdef: 229, sreg: 4, rreg: 2, treg: 1, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 })
 ];
 var LEG_UNITS = [
     /* %%leg_units%% */
@@ -432,7 +433,7 @@ var LEG_UNITS = [
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L12-16", unit_type: "leg", rareity: 12, name: "イヴリダセルブ", craft: "", hp: 60, pp: 10, satk: 25, ratk: 25, tatk: 25, dex: 0, sdef: 234, rdef: 234, tdef: 234, sreg: 3, rreg: 3, treg: 3, efreg: 2, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 2 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L12-19", unit_type: "leg", rareity: 12, name: "ステラウォール", craft: "", hp: 50, pp: 5, satk: 15, ratk: 15, tatk: 15, dex: 15, sdef: 229, rdef: 229, tdef: 229, sreg: 2, rreg: 2, treg: 2, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L12-20", unit_type: "leg", rareity: 12, name: "フォボスニード", craft: "", hp: 80, pp: 0, satk: 40, ratk: 40, tatk: 40, dex: 0, sdef: 263, rdef: 263, tdef: 263, sreg: 5, rreg: 5, treg: 5, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
-    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L12-25", unit_type: "leg", rareity: 12, name: "アリュールエイド", craft: "", hp: 0, pp: 0, satk: 0, ratk: 0, tatk: 0, dex: 0, sdef: 0, rdef: 0, tdef: 0, sreg: 0, rreg: 0, treg: 0, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 })
+    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L12-25", unit_type: "leg", rareity: 12, name: "アリュールエイド", craft: "", hp: 0, pp: 17, satk: 0, ratk: 85, tatk: 0, dex: 0, sdef: 229, rdef: 286, tdef: 233, sreg: 1, rreg: 4, treg: 2, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 5 })
 ];
 var UNIT_SETS = [
     /* %%unit_sets%% */
