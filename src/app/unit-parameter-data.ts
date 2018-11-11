@@ -33,11 +33,7 @@ new UnitParameter({id: "R12-22",unit_type: "rear",rareity: 12,name: "ヤテン�
 new UnitParameter({id: "R12-23",unit_type: "rear",rareity: 12,name: "クラーデムイリック",craft: "",hp: 0,pp: 17,satk: 0,ratk: 0,tatk: 85,dex: 0,sdef: 233,rdef: 229,tdef: 286,sreg: 2,rreg: 1,treg: 4,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 5}),
 new UnitParameter({id: "R12-26",unit_type: "rear",rareity: 12,name: "ラッピーシャイン",craft: "",hp: 777,pp: 0,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 0,rdef: 0,tdef: 0,sreg: 0,rreg: 0,treg: 0,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
 new UnitParameter({id: "R12-27",unit_type: "rear",rareity: 12,name: "セレケラトリプス",craft: "",hp: 70,pp: 7,satk: 20,ratk: 20,tatk: 20,dex: 50,sdef: 236,rdef: 236,tdef: 236,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
-new UnitParameter({id: "R12-28",unit_type: "rear",rareity: 12,name: "ザラケラトリプス",craft: "",hp: 80,pp: 8,satk: 30,ratk: 30,tatk: 30,dex: 50,sdef: 242,rdef: 242,tdef: 242,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
-new UnitParameter({id: "A12-27",unit_type: "rear",rareity: 12,name: "セレアルローン",craft: "",hp: 70,pp: 7,satk: 20,ratk: 20,tatk: 20,dex: 50,sdef: 236,rdef: 236,tdef: 236,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
-new UnitParameter({id: "A12-28",unit_type: "rear",rareity: 12,name: "ザラアルローン",craft: "",hp: 80,pp: 8,satk: 30,ratk: 30,tatk: 30,dex: 50,sdef: 242,rdef: 242,tdef: 242,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
-new UnitParameter({id: "L12-27",unit_type: "rear",rareity: 12,name: "セレアルローン",craft: "",hp: 70,pp: 7,satk: 20,ratk: 20,tatk: 20,dex: 50,sdef: 236,rdef: 236,tdef: 236,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
-new UnitParameter({id: "L12-28",unit_type: "rear",rareity: 12,name: "ザラアルローン",craft: "",hp: 80,pp: 8,satk: 30,ratk: 30,tatk: 30,dex: 50,sdef: 242,rdef: 242,tdef: 242,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0})
+new UnitParameter({id: "R12-28",unit_type: "rear",rareity: 12,name: "ザラケラトリプス",craft: "",hp: 80,pp: 8,satk: 30,ratk: 30,tatk: 30,dex: 50,sdef: 242,rdef: 242,tdef: 242,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0})
 ];
 
 export const ARM_UNITS: UnitParameter[] = [
@@ -70,7 +66,9 @@ new UnitParameter({id: "A12-15",unit_type: "arm",rareity: 12,name: "ハングボ
 new UnitParameter({id: "A12-16",unit_type: "arm",rareity: 12,name: "イヴリダリット",craft: "",hp: 60,pp: 10,satk: 25,ratk: 25,tatk: 25,dex: 0,sdef: 234,rdef: 234,tdef: 234,sreg: 3,rreg: 3,treg: 3,efreg: 2,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 2}),
 new UnitParameter({id: "A12-19",unit_type: "arm",rareity: 12,name: "ステラウォール",craft: "",hp: 50,pp: 5,satk: 15,ratk: 15,tatk: 15,dex: 15,sdef: 229,rdef: 229,tdef: 229,sreg: 2,rreg: 2,treg: 2,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
 new UnitParameter({id: "A12-20",unit_type: "arm",rareity: 12,name: "フォボスヘッジ",craft: "",hp: 80,pp: 0,satk: 40,ratk: 40,tatk: 40,dex: 0,sdef: 263,rdef: 263,tdef: 263,sreg: 5,rreg: 5,treg: 5,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
-new UnitParameter({id: "A12-24",unit_type: "arm",rareity: 12,name: "シャライラケラス",craft: "",hp: 0,pp: 17,satk: 85,ratk: 0,tatk: 0,dex: 0,sdef: 286,rdef: 233,tdef: 229,sreg: 4,rreg: 2,treg: 1,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 5})
+new UnitParameter({id: "A12-24",unit_type: "arm",rareity: 12,name: "シャライラケラス",craft: "",hp: 0,pp: 17,satk: 85,ratk: 0,tatk: 0,dex: 0,sdef: 286,rdef: 233,tdef: 229,sreg: 4,rreg: 2,treg: 1,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 5}),
+new UnitParameter({id: "A12-27",unit_type: "arm",rareity: 12,name: "セレアルローン",craft: "",hp: 70,pp: 7,satk: 20,ratk: 20,tatk: 20,dex: 50,sdef: 236,rdef: 236,tdef: 236,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
+new UnitParameter({id: "A12-28",unit_type: "arm",rareity: 12,name: "ザラアルローン",craft: "",hp: 80,pp: 8,satk: 30,ratk: 30,tatk: 30,dex: 50,sdef: 242,rdef: 242,tdef: 242,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0})
 ];
 
 export const LEG_UNITS: UnitParameter[] = [
@@ -100,7 +98,9 @@ new UnitParameter({id: "L12-15",unit_type: "leg",rareity: 12,name: "タッグボ
 new UnitParameter({id: "L12-16",unit_type: "leg",rareity: 12,name: "イヴリダセルブ",craft: "",hp: 60,pp: 10,satk: 25,ratk: 25,tatk: 25,dex: 0,sdef: 234,rdef: 234,tdef: 234,sreg: 3,rreg: 3,treg: 3,efreg: 2,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 2}),
 new UnitParameter({id: "L12-19",unit_type: "leg",rareity: 12,name: "ステラウォール",craft: "",hp: 50,pp: 5,satk: 15,ratk: 15,tatk: 15,dex: 15,sdef: 229,rdef: 229,tdef: 229,sreg: 2,rreg: 2,treg: 2,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
 new UnitParameter({id: "L12-20",unit_type: "leg",rareity: 12,name: "フォボスニード",craft: "",hp: 80,pp: 0,satk: 40,ratk: 40,tatk: 40,dex: 0,sdef: 263,rdef: 263,tdef: 263,sreg: 5,rreg: 5,treg: 5,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
-new UnitParameter({id: "L12-25",unit_type: "leg",rareity: 12,name: "アリュールエイド",craft: "",hp: 0,pp: 17,satk: 0,ratk: 85,tatk: 0,dex: 0,sdef: 229,rdef: 286,tdef: 233,sreg: 1,rreg: 4,treg: 2,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 5})
+new UnitParameter({id: "L12-25",unit_type: "leg",rareity: 12,name: "アリュールエイド",craft: "",hp: 0,pp: 17,satk: 0,ratk: 85,tatk: 0,dex: 0,sdef: 229,rdef: 286,tdef: 233,sreg: 1,rreg: 4,treg: 2,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 5}),
+new UnitParameter({id: "L12-27",unit_type: "leg",rareity: 12,name: "セレマウニア",craft: "",hp: 70,pp: 7,satk: 20,ratk: 20,tatk: 20,dex: 50,sdef: 236,rdef: 236,tdef: 236,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
+new UnitParameter({id: "L12-28",unit_type: "leg",rareity: 12,name: "ザラマウニア",craft: "",hp: 80,pp: 8,satk: 30,ratk: 30,tatk: 30,dex: 50,sdef: 242,rdef: 242,tdef: 242,sreg: 3,rreg: 3,treg: 3,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0})
 ];
 
 export const UNIT_SETS: UnitSetParameter[] = [
