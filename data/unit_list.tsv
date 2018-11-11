@@ -62,8 +62,8 @@ A12-16	arm	12	イヴリダリット					60	10	25	25	25		234	234	234	3	3	3	2					
 A12-19	arm	12	ステラウォール					50	5	15	15	15	15	229	229	229	2	2	2						
 A12-20	arm	12	フォボスヘッジ					80		40	40	40		263	263	263	5	5	5						
 A12-24	arm	12	シャライラケラス					0	17	85	0	0	0	286	233	229	4	2	1	0	0	0	0	0	5
-A12-27	rear	12	セレアルローン					70	7	20	20	20	50	236	236	236	3	3	3						
-A12-28	rear	12	ザラアルローン 					80	8	30	30	30	50	242	242	242	3	3	3						
+A12-27	arm	12	セレアルローン					70	7	20	20	20	50	236	236	236	3	3	3						
+A12-28	arm	12	ザラアルローン 					80	8	30	30	30	50	242	242	242	3	3	3						
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
 L0	leg	0	レッグなし					0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
@@ -92,8 +92,8 @@ L12-16	leg	12	イヴリダセルブ					60	10	25	25	25		234	234	234	3	3	3	2					
 L12-19	leg	12	ステラウォール					50	5	15	15	15	15	229	229	229	2	2	2						
 L12-20	leg	12	フォボスニード					80		40	40	40		263	263	263	5	5	5						
 L12-25	leg	12	アリュールエイド					0	17	0	85	0	0	229	286	233	1	4	2	0	0	0	0	0	5
-L12-27	rear	12	セレアルローン					70	7	20	20	20	50	236	236	236	3	3	3						
-L12-28	rear	12	ザラアルローン 					80	8	30	30	30	50	242	242	242	3	3	3						
+L12-27	leg	12	セレマウニア					70	7	20	20	20	50	236	236	236	3	3	3						
+L12-28	leg	12	ザラマウニア					80	8	30	30	30	50	242	242	242	3	3	3						
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
 S11-1	set	11			ブリサエーリ	ブリサオッジ	ブリサマーニ	80	5	70	70	70	50	0	0	0	0	0	0	0	9	9	0	0	9
