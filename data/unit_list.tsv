@@ -32,6 +32,9 @@ R12-26	rear	12	ラッピーシャイン					777	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 R12-27	rear	12	セレケラトリプス					70	7	20	20	20	50	236	236	236	3	3	3						
 R12-28	rear	12	ザラケラトリプス					80	8	30	30	30	50	242	242	242	3	3	3						
 R12-29	rear	12	マスクオブヴェイン						20	60	60	60		253	250	250	4	3	3	3	3	3	3	5	5
+R12-30	rear	12	オフゼテリオス					70	5					235	215	225	4	4	5		3		3	3	
+R12-31	rear	12	星震纏ミシオン					70	8	25	25	25		238	238	238	4	4	4						4
+R12-32	rear	12	光跡纏ミシオン					100	15	50	50	50		265	265	265	5	5	5					5	5
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
 A0	arm	0	アームなし					0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
@@ -65,6 +68,9 @@ A12-20	arm	12	フォボスヘッジ					80		40	40	40		263	263	263	5	5	5
 A12-24	arm	12	シャライラケラス					0	17	85	0	0	0	286	233	229	4	2	1	0	0	0	0	0	5
 A12-27	arm	12	セレアルローン					70	7	20	20	20	50	236	236	236	3	3	3						
 A12-28	arm	12	ザラアルローン 					80	8	30	30	30	50	242	242	242	3	3	3						
+A12-30	arm	12	オフゼエンデ					70	5					235	215	225	4	5	4		3		3	3	
+A12-31	arm	12	星震装ルシオン					70	8	25	25	25		238	238	238	4	4	4						4
+A12-32	arm	12	光跡装ルシオン					100	15	50	50	50		265	265	265	5	5	5					5	5
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
 L0	leg	0	レッグなし					0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
@@ -95,6 +101,9 @@ L12-20	leg	12	フォボスニード					80		40	40	40		263	263	263	5	5	5
 L12-25	leg	12	アリュールエイド					0	17	0	85	0	0	229	286	233	1	4	2	0	0	0	0	0	5
 L12-27	leg	12	セレマウニア					70	7	20	20	20	50	236	236	236	3	3	3						
 L12-28	leg	12	ザラマウニア					80	8	30	30	30	50	242	242	242	3	3	3						
+L12-30	leg	12	オフゼトロジー					70	5					235	215	225	5	4	4		3		3	3	
+L12-31	leg	12	星震飾ディシオン					70	8	25	25	25		238	238	238	4	4	4						4
+L12-32	leg	12	光跡飾ディシオン					100	15	50	50	50		265	265	265	5	5	5					5	5
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
 S11-1	set	11			ブリサエーリ	ブリサオッジ	ブリサマーニ	80	5	70	70	70	50	0	0	0	0	0	0	0	9	9	0	0	9
@@ -103,4 +112,5 @@ S11-4	set	11			インヴェルム	インヴェンド			10	70	70	70	50							3		3
 S11-5	set	11			オフゼルム	オフゼンド		50	20	60	60	60	50								3		3	3	
 S11-6	set	11			イデアルディール		イデアルラーナ	50	5	75	75	75	40		80	80					2		2		2
 S11-7	set	11				ダランフィス	ダリルフィス	120	20				60												
+S12-30	set	12			オフゼテリオス	オフゼエンデ		50	20	80	80	80	50								3		3	3	
 S0	set	0						0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
