@@ -37,7 +37,8 @@ new UnitParameter({id: "R12-28",unit_type: "rear",rareity: 12,name: "ザラケ�
 new UnitParameter({id: "R12-29",unit_type: "rear",rareity: 12,name: "マスクオブヴェイン",craft: "",hp: 0,pp: 20,satk: 60,ratk: 60,tatk: 60,dex: 0,sdef: 253,rdef: 250,tdef: 250,sreg: 4,rreg: 3,treg: 3,efreg: 3,eireg: 3,etreg: 3,ewreg: 3,elreg: 5,edreg: 5}),
 new UnitParameter({id: "R12-30",unit_type: "rear",rareity: 12,name: "オフゼテリオス",craft: "",hp: 70,pp: 5,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 235,rdef: 215,tdef: 225,sreg: 4,rreg: 4,treg: 5,efreg: 0,eireg: 3,etreg: 0,ewreg: 3,elreg: 3,edreg: 0}),
 new UnitParameter({id: "R12-31",unit_type: "rear",rareity: 12,name: "星震纏ミシオン",craft: "",hp: 70,pp: 8,satk: 25,ratk: 25,tatk: 25,dex: 0,sdef: 238,rdef: 238,tdef: 238,sreg: 4,rreg: 4,treg: 4,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 4}),
-new UnitParameter({id: "R12-32",unit_type: "rear",rareity: 12,name: "光跡纏ミシオン",craft: "",hp: 100,pp: 15,satk: 50,ratk: 50,tatk: 50,dex: 0,sdef: 265,rdef: 265,tdef: 265,sreg: 5,rreg: 5,treg: 5,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 5,edreg: 5})
+new UnitParameter({id: "R12-32",unit_type: "rear",rareity: 12,name: "光跡纏ミシオン",craft: "",hp: 100,pp: 15,satk: 50,ratk: 50,tatk: 50,dex: 0,sdef: 265,rdef: 265,tdef: 265,sreg: 5,rreg: 5,treg: 5,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 5,edreg: 5}),
+new UnitParameter({id: "R12-33",unit_type: "rear",rareity: 12,name: "オルゲイグラッジ",craft: "",hp: 40,pp: 10,satk: 90,ratk: 90,tatk: 90,dex: 100,sdef: 248,rdef: 272,tdef: 253,sreg: 4,rreg: 5,treg: 4,efreg: 0,eireg: 0,etreg: 5,ewreg: 0,elreg: 0,edreg: 0})
 ];
 
 export const ARM_UNITS: UnitParameter[] = [
