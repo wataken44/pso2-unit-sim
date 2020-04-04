@@ -68,9 +68,9 @@ export class UnitParameter extends ParameterBase {
     this.tatk = param.tatk;
     this.dex = param.dex;
 
-    this.sdef = param.sdef;
-    this.rdef = param.rdef;
-    this.tdef = param.tdef;
+    this.sdef = Math.floor(1.4 * param.sdef);
+    this.rdef = Math.floor(1.4 * param.rdef);
+    this.tdef = Math.floor(1.4 * param.tdef);
     
     this.sreg = param.sreg;
     this.rreg = param.rreg;
