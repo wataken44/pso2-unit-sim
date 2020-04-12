@@ -89,6 +89,50 @@ export class UnitParameter extends ParameterBase {
     }
     return this.name + "(" + this.craft + ")";
   }
+
+  getDisplayNameWithParameter() {
+    var ret = ""
+    if(this.craft == "") {
+      ret = this.name;
+    } else {
+      ret = this.name + "(" + this.craft + ")";
+    }
+
+    ret += " HP:" + String(this.hp);
+    ret += " PP:" + String(this.pp);
+
+    var max_stname = "";
+    var max_stval = 0;
+
+    if(this.satk > 0) {
+      max_stname = "打";
+      max_stval = this.satk;
+    }
+
+    if(this.ratk > 0) {
+      if(this.ratk > max_stval) {
+        max_stname = "射";
+        max_stval = this.ratk;
+      } else if(this.ratk == max_stval) {
+        max_stname += "射";
+      }
+    }
+
+    if(this.tatk > 0) {
+      if(this.tatk > max_stval) {
+        max_stname = "法";
+        max_stval = this.tatk;
+      } else if(this.tatk == max_stval) {
+        max_stname += "法";
+      }
+    }
+
+    if(max_stval != 0) {
+      ret += " " + max_stname + ":" + String(max_stval);
+    }
+
+    return ret;    
+  }
 }
 
 export class UnitSetParameter extends ParameterBase {

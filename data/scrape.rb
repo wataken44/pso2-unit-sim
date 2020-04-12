@@ -37,7 +37,10 @@ def main()
 end
 
 def scrape_debug()
-    puts scrape_unit(ARGV[0])
+    scrape_unit(ARGV[0]).each do |unit|
+        print("%s\t" % unit[1])
+        p unit
+    end
 end
 
 def scrape_all()
@@ -55,13 +58,15 @@ def scrape_all()
     unit_urls.each do |url|
         puts("(%4d/%4d) %s" % [cnt, unit_urls.size, url])
 
-        unit = scrape_unit(url)
-        units << unit
+        uarr = scrape_unit(url)
+        units += uarr
 
         cnt += 1
         sleep(rand() * 4)
-        print("%s\t" % unit[1])
-        p unit
+        uarr.each do |unit|
+            print("%s\t" % unit[1])
+            p unit
+        end
     end
 
     output(units)
@@ -118,13 +123,21 @@ end
 def scrape_unit(url)
     fp = open(url, :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE, "User-Agent" => USER_AGENT)
 
+    title_ptn = /title>(.*) - PSO2 ファンタシースターオンライン2 攻略 Wiki/
     table_ptn = /table.*Type.*/
     tr_ptn = /<tr[^>]*>.*?<\/tr>/
     td_ptn = /<td[^>]*>(.*?)<\/td>/
 
     table = []
+
+    basename = ""
     
     fp.each_line do |line|
+        mo = line.match(title_ptn)
+        if mo then
+            basename = mo[1]
+        end
+        
         mo = line.match(table_ptn)
         next if !mo
 
@@ -141,22 +154,24 @@ def scrape_unit(url)
 
     table = table.transpose
     header = table.shift
-    
-    data = {}
-    PARAMETERS.each do |param|
-        data[param] = nil
-    end
+
+    ret = []
 
     table.each do |row|
+    
+        data = {}
+        PARAMETERS.each do |param|
+            data[param] = nil
+        end
+
         name = row[0].gsub(/<[^>]+>/,"").strip()
         next if row[0].index("<a") || name == "" || name == "-"
-
+        next if (name.size != 1) && (name != basename)
+        
         PARAMETERS.each do |param|
             header.each_with_index do |col, idx|
                 next if !col.index(param)
-                val = row[idx].gsub(/<[^>]+>/,"")
-                val = val.to_i if param != "Type"
-                data[param] = val 
+                data[param] = row[idx].gsub(/<[^>]+>/,"")
             end
 
             next if data[param] != nil
@@ -166,19 +181,32 @@ def scrape_unit(url)
                 mo = col.match(ptn)
                 next if !mo
 
-                data[param] = mo[1].to_i
+                data[param] = mo[1]
             end
         end
 
+        unit = []
+
+        ok = false
+        PARAMETERS.each do |param|
+            if param == "Type" then
+                if basename == data[param]
+                    unit << data[param]
+                else
+                    unit << basename + data[param]
+                end
+            else
+                val = data[param].to_i
+                unit << data[param].to_i
+                ok = true if val != 0
+            end
+        end
+
+        ret << unit if ok
     end
     
     fp.close()
 
-    ret = []
-    PARAMETERS.each do |param|
-        ret << data[param]
-    end
-    
     return ret
 
 end

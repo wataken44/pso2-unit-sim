@@ -21,17 +21,17 @@
     <tbody>
       <tr>
         <td>リア</td>
-        <td>{{ rear_units[rear_index].getDisplayName() }}</td>
+        <td>{{ rear_units[rear_index].getDisplayNameWithParamter() }}</td>
         <td class="text-right" *ngFor="let label of label_short; let idx = index;">{{ rear_units[rear_index].getParam(idx) }}</td>
       </tr>
       <tr>
         <td>アーム</td>
-        <td>{{ arm_units[arm_index].getDisplayName() }}</td>
+        <td>{{ arm_units[arm_index].getDisplayNameWithParamter() }}</td>
         <td class="text-right" *ngFor="let label of label_short; let idx = index;">{{ arm_units[arm_index].getParam(idx) }}</td>
       </tr>
       <tr>
         <td>レッグ</td>
-        <td>{{ leg_units[leg_index].getDisplayName() }}</td>
+        <td>{{ leg_units[leg_index].getDisplayNameWithParamter() }}</td>
         <td class="text-right" *ngFor="let label of label_short; let idx = index;">{{ leg_units[leg_index].getParam(idx) }}</td>
       </tr>
       <tr>

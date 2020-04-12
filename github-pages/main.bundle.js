@@ -28,7 +28,7 @@ module.exports = "<div class=\"container-fluid unit-set\" *ngFor=\"let unit_set 
 /***/ 143:
 /***/ (function(module, exports) {
 
-module.exports = "<form class=\"form-inline\">\n  <select name=\"rear\" class=\"form-control\" [(ngModel)]=\"rear_index\" (change)=\"updateUnitSet()\">\n    <option *ngFor=\"let rear_unit of rear_units; let idx = index;\" value={{idx}}>{{rear_unit.getDisplayName()}}</option>\n  </select>\n  <select name=\"arm\" class=\"form-control\" [(ngModel)]=\"arm_index\" (change)=\"updateUnitSet()\">\n    <option *ngFor=\"let arm_unit of arm_units; let idx = index;\" value={{idx}}>{{arm_unit.getDisplayName()}}</option>\n  </select>\n  <select name=\"leg\" class=\"form-control\" [(ngModel)]=\"leg_index\" (change)=\"updateUnitSet()\">\n    <option *ngFor=\"let leg_unit of leg_units; let idx = index;\" value={{idx}}>{{leg_unit.getDisplayName()}}</option>\n  </select>\n</form>\n<div>\n  <table class=\"table table-sm table-bordered\">\n    <thead>\n      <tr>\n        <td></td>\n        <td style=\"min-width:10em;\">名前</td>\n        <td *ngFor=\"let label of label_short;\" style=\"min-width:3em;\">{{ label }}</td>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>リア</td>\n        <td>{{ rear_units[rear_index].getDisplayName() }}</td>\n        <td class=\"text-right\" *ngFor=\"let label of label_short; let idx = index;\">{{ rear_units[rear_index].getParam(idx) }}</td>\n      </tr>\n      <tr>\n        <td>アーム</td>\n        <td>{{ arm_units[arm_index].getDisplayName() }}</td>\n        <td class=\"text-right\" *ngFor=\"let label of label_short; let idx = index;\">{{ arm_units[arm_index].getParam(idx) }}</td>\n      </tr>\n      <tr>\n        <td>レッグ</td>\n        <td>{{ leg_units[leg_index].getDisplayName() }}</td>\n        <td class=\"text-right\" *ngFor=\"let label of label_short; let idx = index;\">{{ leg_units[leg_index].getParam(idx) }}</td>\n      </tr>\n      <tr>\n        <td>セット</td>\n        <td></td>\n        <td class=\"text-right\" *ngFor=\"let label of label_short; let idx = index;\">{{ unit_sets[unit_set_index].getParam(idx) }}</td>\n      </tr>\n      <tr>\n        <td>合計</td>\n        <td></td>\n        <td class=\"text-right\" *ngFor=\"let label of label_short; let idx = index;\">{{ rear_units[rear_index].getParam(idx)+ arm_units[arm_index].getParam(idx) + leg_units[leg_index].getParam(idx) + unit_sets[unit_set_index].getParam(idx) }}</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n"
+module.exports = "<form class=\"form-inline\">\n  <select name=\"rear\" class=\"form-control\" [(ngModel)]=\"rear_index\" (change)=\"updateUnitSet()\">\n    <option *ngFor=\"let rear_unit of rear_units; let idx = index;\" value={{idx}}>{{rear_unit.getDisplayName()}}</option>\n  </select>\n  <select name=\"arm\" class=\"form-control\" [(ngModel)]=\"arm_index\" (change)=\"updateUnitSet()\">\n    <option *ngFor=\"let arm_unit of arm_units; let idx = index;\" value={{idx}}>{{arm_unit.getDisplayName()}}</option>\n  </select>\n  <select name=\"leg\" class=\"form-control\" [(ngModel)]=\"leg_index\" (change)=\"updateUnitSet()\">\n    <option *ngFor=\"let leg_unit of leg_units; let idx = index;\" value={{idx}}>{{leg_unit.getDisplayName()}}</option>\n  </select>\n</form>\n<div>\n  <table class=\"table table-sm table-bordered\">\n    <thead>\n      <tr>\n        <td></td>\n        <td style=\"min-width:10em;\">名前</td>\n        <td *ngFor=\"let label of label_short;\" style=\"min-width:3em;\">{{ label }}</td>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>リア</td>\n        <td>{{ rear_units[rear_index].getDisplayNameWithParamter() }}</td>\n        <td class=\"text-right\" *ngFor=\"let label of label_short; let idx = index;\">{{ rear_units[rear_index].getParam(idx) }}</td>\n      </tr>\n      <tr>\n        <td>アーム</td>\n        <td>{{ arm_units[arm_index].getDisplayNameWithParamter() }}</td>\n        <td class=\"text-right\" *ngFor=\"let label of label_short; let idx = index;\">{{ arm_units[arm_index].getParam(idx) }}</td>\n      </tr>\n      <tr>\n        <td>レッグ</td>\n        <td>{{ leg_units[leg_index].getDisplayNameWithParamter() }}</td>\n        <td class=\"text-right\" *ngFor=\"let label of label_short; let idx = index;\">{{ leg_units[leg_index].getParam(idx) }}</td>\n      </tr>\n      <tr>\n        <td>セット</td>\n        <td></td>\n        <td class=\"text-right\" *ngFor=\"let label of label_short; let idx = index;\">{{ unit_sets[unit_set_index].getParam(idx) }}</td>\n      </tr>\n      <tr>\n        <td>合計</td>\n        <td></td>\n        <td class=\"text-right\" *ngFor=\"let label of label_short; let idx = index;\">{{ rear_units[rear_index].getParam(idx)+ arm_units[arm_index].getParam(idx) + leg_units[leg_index].getParam(idx) + unit_sets[unit_set_index].getParam(idx) }}</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n"
 
 /***/ }),
 
@@ -119,6 +119,45 @@ var UnitParameter = (function (_super) {
             return this.name;
         }
         return this.name + "(" + this.craft + ")";
+    };
+    UnitParameter.prototype.getDisplayNameWithParameter = function () {
+        var ret = "";
+        if (this.craft == "") {
+            ret = this.name;
+        }
+        else {
+            ret = this.name + "(" + this.craft + ")";
+        }
+        ret += " HP:" + String(this.hp);
+        ret += " PP:" + String(this.pp);
+        var max_stname = "";
+        var max_stval = 0;
+        if (this.satk > 0) {
+            max_stname = "打";
+            max_stval = this.satk;
+        }
+        if (this.ratk > 0) {
+            if (this.ratk > max_stval) {
+                max_stname = "射";
+                max_stval = this.ratk;
+            }
+            else if (this.ratk == max_stval) {
+                max_stname += "射";
+            }
+        }
+        if (this.tatk > 0) {
+            if (this.tatk > max_stval) {
+                max_stname = "法";
+                max_stval = this.tatk;
+            }
+            else if (this.tatk == max_stval) {
+                max_stname += "法";
+            }
+        }
+        if (max_stval != 0) {
+            ret += " " + max_stname + ":" + String(max_stval);
+        }
+        return ret;
     };
     return UnitParameter;
 }(ParameterBase));
@@ -450,7 +489,7 @@ var ARM_UNITS = [
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A13-6", unit_type: "arm", rareity: 13, name: "リバレイトワン", craft: "", hp: 60, pp: 15, satk: 75, ratk: 75, tatk: 75, dex: 0, sdef: 275, rdef: 275, tdef: 275, sreg: 5, rreg: 4, treg: 4, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A13-7", unit_type: "arm", rareity: 13, name: "レーベンヒル", craft: "", hp: 20, pp: 8, satk: 50, ratk: 50, tatk: 0, dex: 0, sdef: 200, rdef: 180, tdef: 180, sreg: 5, rreg: 4, treg: 3, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 5, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A13-8", unit_type: "arm", rareity: 13, name: "ネイバーウト", craft: "", hp: 0, pp: 10, satk: 80, ratk: 0, tatk: 0, dex: 0, sdef: 180, rdef: 160, tdef: 160, sreg: 4, rreg: 3, treg: 3, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 5 }),
-    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A13-9", unit_type: "arm", rareity: 13, name: "ローズプル", craft: "", hp: 80, pp: 2, satk: 30, ratk: 30, tatk: 30, dex: 0, sdef: 250, rdef: 230, tdef: 230, sreg: 5, rreg: 5, treg: 4, efreg: 0, eireg: 0, etreg: 5, ewreg: 0, elreg: 0, edreg: 0 }),
+    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A13-9", unit_type: "arm", rareity: 13, name: "ローズプル", craft: "", hp: 80, pp: 2, satk: 20, ratk: 20, tatk: 20, dex: 0, sdef: 260, rdef: 240, tdef: 240, sreg: 5, rreg: 5, treg: 4, efreg: 0, eireg: 0, etreg: 5, ewreg: 0, elreg: 0, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A13-10", unit_type: "arm", rareity: 13, name: "クローズエル", craft: "", hp: 60, pp: 4, satk: 30, ratk: 30, tatk: 30, dex: 0, sdef: 240, rdef: 220, tdef: 220, sreg: 5, rreg: 4, treg: 5, efreg: 5, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 5 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A13-11", unit_type: "arm", rareity: 13, name: "ロニアシム", craft: "", hp: 100, pp: 0, satk: 0, ratk: 0, tatk: 0, dex: 0, sdef: 270, rdef: 270, tdef: 270, sreg: 5, rreg: 5, treg: 5, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "A13-12", unit_type: "arm", rareity: 13, name: "エクエスシズ", craft: "", hp: 40, pp: 6, satk: 40, ratk: 40, tatk: 40, dex: 0, sdef: 220, rdef: 200, tdef: 200, sreg: 5, rreg: 4, treg: 4, efreg: 0, eireg: 5, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
@@ -507,7 +546,7 @@ var LEG_UNITS = [
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L13-6", unit_type: "leg", rareity: 13, name: "リバレイトマス", craft: "", hp: 60, pp: 15, satk: 75, ratk: 75, tatk: 75, dex: 0, sdef: 275, rdef: 275, tdef: 275, sreg: 4, rreg: 4, treg: 5, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L13-7", unit_type: "leg", rareity: 13, name: "レーベンスタ", craft: "", hp: 20, pp: 8, satk: 50, ratk: 50, tatk: 0, dex: 0, sdef: 200, rdef: 180, tdef: 180, sreg: 5, rreg: 4, treg: 3, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 5, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L13-8", unit_type: "leg", rareity: 13, name: "ネイバーリル", craft: "", hp: 0, pp: 10, satk: 80, ratk: 0, tatk: 0, dex: 0, sdef: 180, rdef: 160, tdef: 160, sreg: 4, rreg: 3, treg: 3, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 5 }),
-    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L13-9", unit_type: "leg", rareity: 13, name: "ローズリー", craft: "", hp: 80, pp: 2, satk: 30, ratk: 30, tatk: 30, dex: 0, sdef: 250, rdef: 230, tdef: 230, sreg: 5, rreg: 5, treg: 4, efreg: 0, eireg: 0, etreg: 5, ewreg: 0, elreg: 0, edreg: 0 }),
+    new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L13-9", unit_type: "leg", rareity: 13, name: "ローズリー", craft: "", hp: 80, pp: 2, satk: 20, ratk: 20, tatk: 20, dex: 0, sdef: 260, rdef: 240, tdef: 240, sreg: 5, rreg: 5, treg: 4, efreg: 0, eireg: 0, etreg: 5, ewreg: 0, elreg: 0, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L13-10", unit_type: "leg", rareity: 13, name: "クローズリー", craft: "", hp: 60, pp: 4, satk: 30, ratk: 30, tatk: 30, dex: 0, sdef: 240, rdef: 220, tdef: 220, sreg: 5, rreg: 4, treg: 5, efreg: 5, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 5 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L13-11", unit_type: "leg", rareity: 13, name: "ロニアポル", craft: "", hp: 100, pp: 0, satk: 0, ratk: 0, tatk: 0, dex: 0, sdef: 270, rdef: 270, tdef: 270, sreg: 5, rreg: 5, treg: 5, efreg: 0, eireg: 0, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
     new __WEBPACK_IMPORTED_MODULE_0__unit_parameter__["b" /* UnitParameter */]({ id: "L13-12", unit_type: "leg", rareity: 13, name: "エクエスグラ", craft: "", hp: 40, pp: 6, satk: 40, ratk: 40, tatk: 40, dex: 0, sdef: 220, rdef: 200, tdef: 200, sreg: 5, rreg: 4, treg: 4, efreg: 0, eireg: 5, etreg: 0, ewreg: 0, elreg: 0, edreg: 0 }),
