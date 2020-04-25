@@ -182,6 +182,8 @@ L13-21	leg	13	フィールニエレ					40	6	0	0	0	0	200	200	220	4	4	5	0	0	0	0	0
 L13-22	leg	13	マギカミラ					0	10	0	0	80	0	160	160	180	3	3	4	0	0	5	0	0	0
 L13-23	leg	13	ファウマトアノ					100	0	0	0	0	0	270	270	270	5	4	6	0	0	0	0	0	0
 L13-24	leg	13	センシアスオル					60	4	30	30	30	0	220	220	240	4	5	5	0	5	0	0	5	0
+L13-25	leg	13	ノヴァセル					50	22	50	50	50	30	274	264	284	4	4	5	0	0	13	0	0	0
+L13-26	leg	13	ミラージュセル					50	22	50	50	50	30	274	284	264	4	5	4	0	0	13	0	0	0
 																									
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg

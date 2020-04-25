@@ -176,13 +176,14 @@ def scrape_unit(url)
 
             next if data[param] != nil
 
-            ptn = Regexp.compile(param + '[+＋]?(\d+)')
+            ptn = Regexp.compile(param + '[+＋](\d+)')
             row.each do |col|
                 mo = col.match(ptn)
                 next if !mo
 
                 data[param] = mo[1]
             end
+
         end
 
         unit = []
