@@ -64,7 +64,9 @@ new UnitParameter({id: "R13-20",unit_type: "rear",rareity: 13,name: "レスト�
 new UnitParameter({id: "R13-21",unit_type: "rear",rareity: 13,name: "フィールファラ",craft: "",hp: 10,pp: 1,satk: 10,ratk: 10,tatk: 10,dex: 0,sdef: 230,rdef: 230,tdef: 230,sreg: 6,rreg: 6,treg: 6,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
 new UnitParameter({id: "R13-22",unit_type: "rear",rareity: 13,name: "マギカクルト",craft: "",hp: 10,pp: 1,satk: 10,ratk: 10,tatk: 10,dex: 0,sdef: 230,rdef: 230,tdef: 230,sreg: 6,rreg: 6,treg: 6,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
 new UnitParameter({id: "R13-23",unit_type: "rear",rareity: 13,name: "ファウマパレ",craft: "",hp: 10,pp: 1,satk: 10,ratk: 10,tatk: 10,dex: 0,sdef: 230,rdef: 230,tdef: 230,sreg: 6,rreg: 6,treg: 6,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
-new UnitParameter({id: "R13-24",unit_type: "rear",rareity: 13,name: "センシアスエア",craft: "",hp: 10,pp: 1,satk: 10,ratk: 10,tatk: 10,dex: 0,sdef: 230,rdef: 230,tdef: 230,sreg: 6,rreg: 6,treg: 6,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0})
+new UnitParameter({id: "R13-24",unit_type: "rear",rareity: 13,name: "センシアスエア",craft: "",hp: 10,pp: 1,satk: 10,ratk: 10,tatk: 10,dex: 0,sdef: 230,rdef: 230,tdef: 230,sreg: 6,rreg: 6,treg: 6,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
+new UnitParameter({id: "R13-27",unit_type: "rear",rareity: 13,name: "オフゼハザラ",craft: "",hp: 120,pp: 13,satk: 60,ratk: 60,tatk: 60,dex: 40,sdef: 291,rdef: 277,tdef: 281,sreg: 5,rreg: 5,treg: 5,efreg: 0,eireg: 5,etreg: 0,ewreg: 5,elreg: 5,edreg: 0}),
+new UnitParameter({id: "R13-28",unit_type: "rear",rareity: 13,name: "アトラシュメル",craft: "",hp: 100,pp: 11,satk: 90,ratk: 90,tatk: 90,dex: 0,sdef: 267,rdef: 267,tdef: 267,sreg: 4,rreg: 4,treg: 4,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0})
 ];
 
 export const ARM_UNITS: UnitParameter[] = [
@@ -125,7 +127,9 @@ new UnitParameter({id: "A13-20",unit_type: "arm",rareity: 13,name: "リュアヴ
 new UnitParameter({id: "A13-21",unit_type: "arm",rareity: 13,name: "フィールアネ",craft: "",hp: 40,pp: 6,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 200,rdef: 200,tdef: 220,sreg: 4,rreg: 4,treg: 5,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 5}),
 new UnitParameter({id: "A13-22",unit_type: "arm",rareity: 13,name: "マギカウィル",craft: "",hp: 0,pp: 10,satk: 0,ratk: 0,tatk: 80,dex: 0,sdef: 160,rdef: 160,tdef: 180,sreg: 3,rreg: 3,treg: 4,efreg: 0,eireg: 0,etreg: 5,ewreg: 0,elreg: 0,edreg: 0}),
 new UnitParameter({id: "A13-23",unit_type: "arm",rareity: 13,name: "ファウマリルベ",craft: "",hp: 100,pp: 0,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 270,rdef: 270,tdef: 270,sreg: 5,rreg: 4,treg: 6,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
-new UnitParameter({id: "A13-24",unit_type: "arm",rareity: 13,name: "センシアスアイ",craft: "",hp: 60,pp: 4,satk: 30,ratk: 30,tatk: 30,dex: 0,sdef: 220,rdef: 220,tdef: 240,sreg: 4,rreg: 5,treg: 5,efreg: 0,eireg: 5,etreg: 0,ewreg: 0,elreg: 5,edreg: 0})
+new UnitParameter({id: "A13-24",unit_type: "arm",rareity: 13,name: "センシアスアイ",craft: "",hp: 60,pp: 4,satk: 30,ratk: 30,tatk: 30,dex: 0,sdef: 220,rdef: 220,tdef: 240,sreg: 4,rreg: 5,treg: 5,efreg: 0,eireg: 5,etreg: 0,ewreg: 0,elreg: 5,edreg: 0}),
+new UnitParameter({id: "A13-27",unit_type: "arm",rareity: 13,name: "オフゼテリコ",craft: "",hp: 120,pp: 13,satk: 60,ratk: 60,tatk: 60,dex: 40,sdef: 291,rdef: 277,tdef: 281,sreg: 5,rreg: 5,treg: 5,efreg: 0,eireg: 5,etreg: 0,ewreg: 5,elreg: 5,edreg: 0}),
+new UnitParameter({id: "A13-28",unit_type: "arm",rareity: 13,name: "アトラシャテン",craft: "",hp: 100,pp: 11,satk: 90,ratk: 90,tatk: 90,dex: 0,sdef: 267,rdef: 267,tdef: 267,sreg: 4,rreg: 4,treg: 4,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0})
 ];
 
 export const LEG_UNITS: UnitParameter[] = [
@@ -185,7 +189,9 @@ new UnitParameter({id: "L13-22",unit_type: "leg",rareity: 13,name: "マギカミ
 new UnitParameter({id: "L13-23",unit_type: "leg",rareity: 13,name: "ファウマトアノ",craft: "",hp: 100,pp: 0,satk: 0,ratk: 0,tatk: 0,dex: 0,sdef: 270,rdef: 270,tdef: 270,sreg: 5,rreg: 4,treg: 6,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0}),
 new UnitParameter({id: "L13-24",unit_type: "leg",rareity: 13,name: "センシアスオル",craft: "",hp: 60,pp: 4,satk: 30,ratk: 30,tatk: 30,dex: 0,sdef: 220,rdef: 220,tdef: 240,sreg: 4,rreg: 5,treg: 5,efreg: 0,eireg: 5,etreg: 0,ewreg: 0,elreg: 5,edreg: 0}),
 new UnitParameter({id: "L13-25",unit_type: "leg",rareity: 13,name: "ノヴァセル",craft: "",hp: 50,pp: 22,satk: 50,ratk: 50,tatk: 50,dex: 30,sdef: 274,rdef: 264,tdef: 284,sreg: 4,rreg: 4,treg: 5,efreg: 0,eireg: 0,etreg: 13,ewreg: 0,elreg: 0,edreg: 0}),
-new UnitParameter({id: "L13-26",unit_type: "leg",rareity: 13,name: "ミラージュセル",craft: "",hp: 50,pp: 22,satk: 50,ratk: 50,tatk: 50,dex: 30,sdef: 274,rdef: 284,tdef: 264,sreg: 4,rreg: 5,treg: 4,efreg: 0,eireg: 0,etreg: 13,ewreg: 0,elreg: 0,edreg: 0})
+new UnitParameter({id: "L13-26",unit_type: "leg",rareity: 13,name: "ミラージュセル",craft: "",hp: 50,pp: 22,satk: 50,ratk: 50,tatk: 50,dex: 30,sdef: 274,rdef: 284,tdef: 264,sreg: 4,rreg: 5,treg: 4,efreg: 0,eireg: 0,etreg: 13,ewreg: 0,elreg: 0,edreg: 0}),
+new UnitParameter({id: "L13-27",unit_type: "leg",rareity: 13,name: "オフゼリーヴル",craft: "",hp: 120,pp: 13,satk: 60,ratk: 60,tatk: 60,dex: 40,sdef: 291,rdef: 277,tdef: 281,sreg: 5,rreg: 5,treg: 5,efreg: 0,eireg: 5,etreg: 0,ewreg: 5,elreg: 5,edreg: 0}),
+new UnitParameter({id: "L13-28",unit_type: "leg",rareity: 13,name: "アトラクヴァル",craft: "",hp: 100,pp: 11,satk: 90,ratk: 90,tatk: 90,dex: 0,sdef: 267,rdef: 267,tdef: 267,sreg: 4,rreg: 4,treg: 4,efreg: 0,eireg: 0,etreg: 0,ewreg: 0,elreg: 0,edreg: 0})
 ];
 
 export const UNIT_SETS: UnitSetParameter[] = [
