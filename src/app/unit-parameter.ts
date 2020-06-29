@@ -48,7 +48,7 @@ class ParameterBase {
 export class UnitParameter extends ParameterBase {
   id: string;
   unit_type: string;
-  rarerity: number;
+  rarity: number;
   name: string;
   craft: string;
 
@@ -56,7 +56,7 @@ export class UnitParameter extends ParameterBase {
     super();
     this.id = param.id;
     this.unit_type = param.unit_type;
-    this.rarerity = param.rarerity;
+    this.rarity = param.rarity;
     this.name = param.name;
     this.craft = param.craft;
 

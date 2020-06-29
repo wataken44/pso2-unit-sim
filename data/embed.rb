@@ -6,7 +6,7 @@
 PARAMETERS = [
     ["id", "string", "", true, true],
     ["unit_type", "string", "", true, true],
-    ["rareity", "number", 0, true, false],
+    ["rarity", "number", 0, true, false],
     ["name", "string", "", true, false],
     ["craft", "string", "", true, false],
     ["rear_units", "array<string>", [], false, true],
@@ -89,30 +89,34 @@ def main()
 
     dfp = open(ARGV.shift)
 
-    rear_units = []
-    arm_units = []
-    leg_units = []
-    unit_sets = []
+    rear_units = Hash.new{|h,k| h[k] = []}
+    arm_units = Hash.new{|h,k| h[k] = []}
+    leg_units = Hash.new{|h,k| h[k] = []}
+    unit_sets = Hash.new{|h,k| h[k] = []}
     
     dfp.each_line do |line|
         next if line.size > 0 && line[0] == '#'
         line.force_encoding('utf-8')
         arr = line.chomp.split("\t").map{|s| next s.strip()}
 
-        next if arr[0] == ""
+        next if arr.size == 0 || arr[0] == ""
+
+        rarr = regularize(arr)
+        rarity = rarr["rarity"]
+
 
         case arr[1]
         when "rear"
-            rear_units << to_ts_unit(regularize(arr))
+            rear_units[rarity] << to_ts_unit(rarr)
         when "arm"
-            arm_units << to_ts_unit(regularize(arr))
+            arm_units[rarity] << to_ts_unit(rarr)
         when "leg"
-            leg_units << to_ts_unit(regularize(arr))
+            leg_units[rarity] << to_ts_unit(rarr)
         when "set"
-            unit_sets << to_ts_unit_set(regularize(arr))
+            unit_sets[rarity] << to_ts_unit_set(rarr)
         end
     end
-    
+
     dfp.close()
 
     tfp = open(ARGV.shift)
@@ -121,13 +125,17 @@ def main()
     tfp.each_line do |line|
         ofp.puts(line)
         if line.index("%%rear_units%%") then
-            ofp.puts(rear_units.join(",\n") + "\n")
+            arr = rear_units[0] + rear_units[13] + rear_units[12] + rear_units[11]
+            ofp.puts(arr.join(",\n") + "\n")
         elsif line.index("%%arm_units%%") then
-            ofp.puts(arm_units.join(",\n") + "\n")
+            arr = arm_units[0] + arm_units[13] + arm_units[12] + arm_units[11] 
+            ofp.puts(arr.join(",\n") + "\n")
         elsif line.index("%%leg_units%%") then
-            ofp.puts(leg_units.join(",\n") + "\n")
+            arr = leg_units[0] + leg_units[13] + leg_units[12] + leg_units[11] 
+            ofp.puts(arr.join(",\n") + "\n")
         elsif line.index("%%unit_sets%%") then
-            ofp.puts(unit_sets.join(",\n") + "\n")
+            arr = unit_sets[0] + unit_sets[13] + unit_sets[12] + unit_sets[11] 
+            ofp.puts(arr.join(",\n") + "\n")
         end
     end
     
