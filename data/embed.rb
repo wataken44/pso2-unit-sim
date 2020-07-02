@@ -134,7 +134,7 @@ def main()
             arr = leg_units[0] + leg_units[13] + leg_units[12] + leg_units[11] 
             ofp.puts(arr.join(",\n") + "\n")
         elsif line.index("%%unit_sets%%") then
-            arr = unit_sets[0] + unit_sets[13] + unit_sets[12] + unit_sets[11] 
+            arr = unit_sets[13] + unit_sets[12] + unit_sets[11] + unit_sets[0]
             ofp.puts(arr.join(",\n") + "\n")
         end
     end
