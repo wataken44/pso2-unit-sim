@@ -64,6 +64,7 @@ R13-23	rear	13	ファウマパレ					10	1	10	10	10		230	230	230	6	6	6	0	0	0	0	0
 R13-24	rear	13	センシアスエア					10	1	10	10	10		230	230	230	6	6	6	0	0	0	0	0	0
 R13-27	rear	13	オフゼハザラ					120	13	60	60	60	40	291	277	281	5	5	5	0	5	0	5	5	0
 R13-28	rear	13	アトラシュメル					100	11	90	90	90	0	267	267	267	4	4	4	0	0	0	0	0	0
+R13-29	rear	13	光跡纏パシオン					100	16	65	65	65	0	283	283	283	6	5	5	0	0	0	0	5	5
 																									
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
@@ -126,6 +127,7 @@ A13-23	arm	13	ファウマリルベ					100	0	0	0	0	0	270	270	270	5	4	6	0	0	0	0	
 A13-24	arm	13	センシアスアイ					60	4	30	30	30	0	220	220	240	4	5	5	0	5	0	0	5	0
 A13-27	arm	13	オフゼテリコ					120	13	60	60	60	40	291	277	281	5	5	5	0	5	0	5	5	0
 A13-28	arm	13	アトラシャテン					100	11	90	90	90	0	267	267	267	4	4	4	0	0	0	0	0	0
+A13-29	arm	13	光跡装ビシオン					100	16	65	65	65	0	283	283	283	5	6	5	0	0	0	0	5	5
 																									
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
@@ -187,6 +189,7 @@ L13-25	leg	13	ノヴァセル					50	22	50	50	50	30	274	264	284	4	4	5	0	0	13	0	0
 L13-26	leg	13	ミラージュセル					50	22	50	50	50	30	274	284	264	4	5	4	0	0	13	0	0	0
 L13-27	leg	13	オフゼリーヴル					120	13	60	60	60	40	291	277	281	5	5	5	0	5	0	5	5	0
 L13-28	leg	13	アトラクヴァル					100	11	90	90	90	0	267	267	267	4	4	4	0	0	0	0	0	0
+L13-29	leg	13	光跡飾ラシオン					100	16	65	65	65	0	283	283	283	5	5	6	0	0	0	0	5	5
 																									
 																									
 #id	unit_type	rarerity	name	craft	rear_units	arm_units	leg_units	hp	pp	satk	ratk	tatk	dex	sdef	rdef	tdef	sreg	rreg	treg	efreg	eireg	etreg	ewreg	elreg	edreg
